@@ -9,13 +9,16 @@ body {
     align-items: center;
 }
 
+.et-d-flex {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 #et-figure {
-    background: black;
+    background: #0c0c0c;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .app {
@@ -33,10 +36,8 @@ body {
 
 .et-picker-container {
     width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
 .main-svg {
@@ -44,11 +45,8 @@ body {
 }
 
 .et-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    background: gray;
+    background: rgb(54, 54, 54);
 }
 
 .et-card {
@@ -61,4 +59,17 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+.et-main-popup-window {
+    background: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.choose-skin-window {
+    
 }
