@@ -3,6 +3,12 @@
     margin: 0;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #et-figure {
     background: black;
     width: 100%;
@@ -14,8 +20,45 @@
 
 .app {
     width: 100%;
+    width: 1200px;
 }
 
 .cam-image {
     background: blue;
+}
+
+.et-mobile-container {
+    width: 50%;
+}
+
+.et-picker-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-svg {
+    max-height: 50vh;
+}
+
+.et-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: gray;
+}
+
+.et-card {
+    height: 70px;
+    width: 400px;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
