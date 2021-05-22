@@ -7,7 +7,6 @@ let marble_white = "http://infinityskins.ba/wp-content/uploads/2021/05/marble-wh
 
 let all_materials = document.querySelectorAll('.material-card');
 let back_skin_image = document.querySelector('.back-image');
-let delete_materials = document.querySelector('')
 
 for(let i=0; i<all_materials.length; i++) {
     all_materials[i].addEventListener('click', e => {
