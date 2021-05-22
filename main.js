@@ -7,11 +7,22 @@ let marble_white = "http://infinityskins.ba/wp-content/uploads/2021/05/marble-wh
 
 let all_materials = document.querySelectorAll('.material-card');
 let back_skin_image = document.querySelector('.back-image');
+let delete_materials = document.querySelector('')
 
 for(let i=0; i<all_materials.length; i++) {
     all_materials[i].addEventListener('click', e => {
-        let material = e.target.parentElement.id;
-        console.log(material)
+        
+        let parent_card = e.target.parentElement;
+        let material = parent_card.id;
+        
+        if (parent_card.classList.contains('et-card-selected')) {
+            remove_all_selected_material_cards(all_materials);
+            
+        }else{
+            remove_all_selected_material_cards(all_materials);
+            parent_card.classList.add('et-card-selected');
+        }
+
         switch(material){
             case "carbon-red":
                 back_skin_image.href.baseVal = carbon_red;
@@ -30,4 +41,10 @@ for(let i=0; i<all_materials.length; i++) {
                 break;
         }
     });
+}
+
+function remove_all_selected_material_cards(elems){
+    for(let l=0; l<elems.length; l++){
+        elems[l].classList.remove('et-card-selected');
+    }
 }
