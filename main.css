@@ -3,10 +3,15 @@
     margin: 0;
 }
 
+html {
+    
+}
+
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+    
 }
 
 .et-d-flex {
@@ -24,6 +29,7 @@ body {
 .app {
     width: 100%;
     width: 1200px;
+    height: 100vh;
 }
 
 .cam-image {
@@ -42,11 +48,13 @@ body {
 
 .main-svg {
     max-height: 50vh;
+    min-height: 20em;
 }
 
 .et-container {
     width: 100%;
     background: rgb(54, 54, 54);
+    align-items: stretch;
 }
 
 .et-card {
@@ -70,6 +78,43 @@ body {
     left: 0;
 }
 
-.choose-skin-window {
-    
+.et-section {
+    display: flex;
+}
+
+.section-one {
+    background: green;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.section-two {
+    background: yellow;
+    flex: 2;
+    padding: 20px;
+}
+
+.section-three {
+    background: rgb(0, 110, 255);
+}
+
+.et-main-popup-window {
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.material-card {
+    width: 60px;
+    height: 60px;
+    background: rgb(0, 247, 255);
+    border-radius: 7px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.material-category {
+    display: flex;
+    flex-direction: row;
 }
