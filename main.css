@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 body {
@@ -52,18 +53,23 @@ body {
     width: 100%;
     background: rgb(54, 54, 54);
     align-items: stretch;
+    overflow: hidden;
 }
 
 .et-card {
     height: 70px;
     width: 400px;
-    background: white;
+    background: rgb(119, 119, 119);
     border-radius: 5px;
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: 1px solid black;
+    color: white;
+    letter-spacing: 0.5px;
+    padding: 0px 20px;
 }
 
 .et-main-popup-window {
@@ -106,6 +112,7 @@ body {
 .et-main-popup-window {
     align-items: stretch;
     flex-direction: column;
+    transition-duration: 0.5s;
 }
 
 .material-card {
@@ -150,4 +157,30 @@ body {
 
 .et-card-selected {
     border: 2px solid rgb(255, 8, 0);
+}
+
+.et-close-popup-window {
+    transform: translateX(500px);
+    opacity: 0;
+}
+
+.et-add-ribbon {
+    padding: 4px 10px;
+    background: #ffe066;
+    border-radius: 4px;
+    color: black;
+    margin-left: 10px;
+}
+
+.et-choosed {
+    background: white;
+    color: #0c0c0c;
+}
+
+.et-button {
+    padding: 12px 20px;
+    background: #ffe066;
+    cursor: pointer;
+    font-weight: bold;
+    color: #0c0c0c;
 }

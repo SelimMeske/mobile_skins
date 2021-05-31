@@ -5,41 +5,56 @@ let leather_black = "http://infinityskins.ba/wp-content/uploads/2021/05/leather-
 let wood_bamboo = "http://infinityskins.ba/wp-content/uploads/2021/05/wood-bamboo.png";
 let marble_white = "http://infinityskins.ba/wp-content/uploads/2021/05/marble-white.png";
 
+let mode = null;
+let choosed_back_skin = null;
+let choosed_cam_skin = null;
+
 let all_materials = document.querySelectorAll('.material-card > img');
 let back_skin_image = document.querySelector('.back-image');
-let all_material_cars = document.querySelectorAll('.material-card');
-
-console.log(all_materials)
+let all_material_cards = document.querySelectorAll('.material-card');
+let remove_materials = document.querySelector('.et-delete-material');
+let back_button = document.querySelector('.et-back-button');
+let main_popup_window = document.querySelector('.et-main-popup-window');
+let choose_cam_skin_button = document.querySelector('.et-card-camera-skin');
+let choose_back_skin_button = document.querySelector('.et-card-back-skin');
+let ribbon = document.querySelector('.et-add-ribbon');
+let add_skin_button = document.querySelector('.et-add-skin-button');
 
 for(let i=0; i<all_materials.length; i++) {
     all_materials[i].addEventListener('click', e => {
-
-        remove_all_selected_material_cards(all_material_cars);
         
         let parent_card = e.target.parentElement;
         let material = parent_card.id;
         
         if (parent_card.classList.contains('et-card-selected')) {
-            remove_all_selected_material_cards(all_material_cars);
+            remove_all_selected_material_cards(all_material_cards);
             back_skin_image.href.baseVal = "";
+            if(mode == 'back_skin') {
+                choosed_back_skin = null;
+            }
         }else{
-            remove_all_selected_material_cards(all_materials);
+            remove_all_selected_material_cards(all_material_cards);
             parent_card.classList.add('et-card-selected');
             switch(material){
                 case "carbon-red":
                     back_skin_image.href.baseVal = carbon_red;
+                    choosed_back_skin = 'carbon_red';
                     break;
                 case "carbon-black":
                     back_skin_image.href.baseVal = carbon_black;
+                    choosed_back_skin = 'carbon_black';
                     break;
                 case "leather-black":
                     back_skin_image.href.baseVal = leather_black;
+                    choosed_back_skin = 'leather_black';
                     break;
                 case "wood-bamboo":
                     back_skin_image.href.baseVal = wood_bamboo;
+                    choosed_back_skin = 'wood_bamboo';
                     break;  
                 case "marble-white":
                     back_skin_image.href.baseVal = marble_white;
+                    choosed_back_skin = 'marble_white';
                     break;
             }
             
@@ -47,6 +62,33 @@ for(let i=0; i<all_materials.length; i++) {
 
         
     });
+}
+
+choose_back_skin_button.addEventListener('click', e => {
+    mode = 'back_skin';
+
+    main_popup_window.classList.remove('et-close-popup-window');
+});
+
+back_button.addEventListener('click', e => {
+    apply_skin_and_close();
+});
+
+add_skin_button.addEventListener('click', e => {
+    apply_skin_and_close();
+});
+
+function apply_skin_and_close() {
+
+    if(choosed_back_skin) {
+        choose_back_skin_button.classList.add('et-choosed');
+        ribbon.innerHTML = '<span>&#10003;</span>';
+    }else {
+        choose_back_skin_button.classList.remove('et-choosed');
+        ribbon.innerHTML = 'DODAJ';
+    }
+
+    main_popup_window.classList.add('et-close-popup-window');
 }
 
 function remove_all_selected_material_cards(elems){
