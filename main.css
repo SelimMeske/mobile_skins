@@ -166,6 +166,10 @@ body {
     visibility: hidden; 
 }
 
+.et-choose-style-title {
+    font-size: 20px;
+}
+
 .et-add-ribbon {
     padding: 4px 10px;
     background: #ffe066;
@@ -212,15 +216,25 @@ body {
     .et-card {
         width: 100%;
     }
+
+    .et-choose-style-title {
+        font-size: 14px;
+    }
     
     .et-main-popup-window {
         width: 100%;
         transform: translate(-50%, -60%);
+        font-size: 14px !important;
     }
 
     .material-card {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .et-delete-material {
+       width: 35px;
+       height: 35px;
     }
 }
 
