@@ -1,9 +1,16 @@
-//Skin links
+//Back skins links
 let carbon_red = "http://infinityskins.ba/wp-content/uploads/2021/05/carbon-red.png";
 let carbon_black = "http://infinityskins.ba/wp-content/uploads/2021/05/carbon-black.png";
 let leather_black = "http://infinityskins.ba/wp-content/uploads/2021/05/leather-black.png";
 let wood_bamboo = "http://infinityskins.ba/wp-content/uploads/2021/05/wood-bamboo.png";
 let marble_white = "http://infinityskins.ba/wp-content/uploads/2021/05/marble-white.png";
+
+//Cam skins links
+let carbo_black_cam_skin = "http://infinityskins.ba/wp-content/uploads/2021/06/carbon-black-1-1.png";
+let wood_bamboo_cam_skin = "http://infinityskins.ba/wp-content/uploads/2021/06/wood-mahogany-1.png";
+let carbon_yellow_cam_skin = "http://infinityskins.ba/wp-content/uploads/2021/06/carbon-yellow-1.png";
+let carbon_red_cam_skin = "http://infinityskins.ba/wp-content/uploads/2021/06/carbon-red-3.png";
+let white_carbon_cam_skin = "http://infinityskins.ba/wp-content/uploads/2021/06/marble-white-1.png";
 
 let mode = null;
 let choosed_back_skin = null;
