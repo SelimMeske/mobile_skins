@@ -1,15 +1,8 @@
-class Mobile{
-    constructor(name, back_skin, cam_skin){
+class Mobile extends BackSkins{
+    constructor(name, carbonRedBack, carbonBlackBack, leatherBlackBack, whiteCarbonBack, marbleWhiteBack, 
+        carbonRedCam, carbonBlackCam, leatherBlackCam, whiteCarbonCam, marbleWhiteCam){
+        super(carbonRedBack, carbonBlackBack, leatherBlackBack, whiteCarbonBack, marbleWhiteBack, 
+              carbonRedCam, carbonBlackCam, leatherBlackCam, whiteCarbonCam, marbleWhiteCam);
         this.name = name;
-        this.back_skin = back_skin;
-        this.cam_skin = cam_skin;
-    }
-    //Return back skin image
-    getBackSkin(skinName){
-
-    }
-    //Return camera skin image
-    getCamSkin(skinName){
-
     }
 }

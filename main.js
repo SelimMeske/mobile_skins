@@ -1,20 +1,3 @@
-//Back skins links
-let carbonRed = "http://infinityskins.ba/wp-content/uploads/2021/05/carbon-red.png";
-let carbonBlack = "http://infinityskins.ba/wp-content/uploads/2021/05/carbon-black.png";
-let leatherBlack = "http://infinityskins.ba/wp-content/uploads/2021/05/leather-black.png";
-let woodBamboo = "http://infinityskins.ba/wp-content/uploads/2021/05/wood-bamboo.png";
-let marbleWhite = "http://infinityskins.ba/wp-content/uploads/2021/05/marble-white.png";
-
-//Cam skins links
-let carbonBlackCamSkin = "http://infinityskins.ba/wp-content/uploads/2021/06/carbon-black-1-1.png";
-let woodBambooCamSkin = "http://infinityskins.ba/wp-content/uploads/2021/06/wood-mahogany-1.png";
-let carbonYellowCamSkin = "http://infinityskins.ba/wp-content/uploads/2021/06/carbon-yellow-1.png";
-let carbonRedCamSkin = "http://infinityskins.ba/wp-content/uploads/2021/06/carbon-red-3.png";
-let whiteCarbonCamSkin = "http://infinityskins.ba/wp-content/uploads/2021/06/marble-white-1.png";
-
-//Phone objects, with skins.
-let galaxy_s21 = new Mobile("Galaxy S21", [carbonRed, carbonBlack], [carbonRedCamSkin, carbonYellowCamSkin]);
-
 let mode = null;
 let choosedBackSkin = null;
 let choosedCamSkin = null;
