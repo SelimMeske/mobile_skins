@@ -10,8 +10,25 @@ let backButton = document.querySelector('.et-back-button');
 let mainPopupWindow = document.querySelector('.et-main-popup-window');
 let chooseCamSkinButton = document.querySelector('.et-card-camera-skin');
 let chooseBackSkinButton = document.querySelector('.et-card-back-skin');
-let ribbon = document.querySelector('.et-add-ribbon');
+let ribbon = document.querySelectorAll('.et-add-ribbon');
 let addSkinButton = document.querySelector('.et-add-skin-button');
+let addSkinCards = document.querySelectorAll(".et-card");
+let backSkinCard = document.querySelector("#et-back-skin");
+let camSkinCard = document.querySelector("#et-cam-skin");
+
+
+//Add mode depending on what did the user choose, back or cam skin.
+for(let p=0; p<addSkinCards.length; p++) {
+    addSkinCards[p].addEventListener("click", e => {
+        if (e.target == backSkinCard) {
+            mode = 'back_skin';
+            mainPopupWindow.classList.remove('et-close-popup-window');
+        }else if (e.target == camSkinCard) {
+            mode = 'cam_skin';
+            mainPopupWindow.classList.remove('et-close-popup-window');
+        }
+    });
+}
 
 for(let i=0; i<allMaterials.length; i++) {
     allMaterials[i].addEventListener('click', e => {
@@ -60,7 +77,7 @@ for(let i=0; i<allMaterials.length; i++) {
 chooseBackSkinButton.addEventListener('click', e => {
     mode = 'back_skin';
 
-    mainPopupWindow.classList.remove('et-close-popup-window');
+    
 });
 
 backButton.addEventListener('click', e => {

@@ -1,11 +1,12 @@
 class BackSkins extends CamSkins{
-    constructor(carbonRedBack, carbonBlackBack, leatherBlackBack, whiteCarbonBack, marbleWhiteBack, 
-                carbonRedCam, carbonBlackCam, leatherBlackCam, whiteCarbonCam, marbleWhiteCam){
-        super(carbonRedCam, carbonBlackCam, leatherBlackCam, whiteCarbonCam, marbleWhiteCam);
+    constructor(carbonRedBack, carbonBlackBack, carbonYellowBack, whiteCarbonBack, carbonWhiteBack, carbonYellowBack,
+                carbonRedCam, carbonBlackCam, yellowCarbonCam, whiteCarbonCam, marbleWhiteCam){
+        super(carbonRedCam, carbonBlackCam, yellowCarbonCam, whiteCarbonCam, marbleWhiteCam);
         this.carbonRedBack = carbonRedBack;
         this.carbonBlackBack = carbonBlackBack;
-        this.leatherBlackBack = leatherBlackBack;
+        this.carbonYellowBack = carbonYellowBack;
         this.whiteCarbonBack = whiteCarbonBack;
-        this.marbleWhiteBack = marbleWhiteBack;
+        this.carbonWhiteBack = carbonWhiteBack;
+        this.carbonYellowBack = carbonYellowBack;
     }
 }

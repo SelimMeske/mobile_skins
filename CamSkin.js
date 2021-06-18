@@ -1,8 +1,8 @@
 class CamSkins{
-    constructor(carbonRedCam, carbonBlackCam, leatherBlackCam, whiteCarbonCam, marbleWhiteCam){
+    constructor(carbonRedCam, carbonBlackCam, yellowCarbonCam, whiteCarbonCam, marbleWhiteCam){
         this.carbonRedCam = carbonRedCam;
         this.carbonBlackCam = carbonBlackCam;
-        this.leatherBlackCam = leatherBlackCam;
+        this.yellowCarbonCam = yellowCarbonCam;
         this.whiteCarbonCam = whiteCarbonCam;
         this.marbleWhiteCam = marbleWhiteCam;
     }
