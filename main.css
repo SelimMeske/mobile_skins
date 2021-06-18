@@ -83,6 +83,8 @@ body {
 
 .et-section {
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 5px 20px 5px 20px;
     flex-wrap: wrap;
 }
@@ -103,7 +105,7 @@ body {
 
 .section-three {
     border-top: 2px solid gray;
-    background: #d3d3d3;
+    background: black;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -149,15 +151,15 @@ body {
 }
 
 .et-delete-material {
-    background: #ff8080;
     width: 50px;
     height: 50px;
-    border-radius: 7px;
     cursor: pointer;
 }
 
 .et-card-selected {
-    border: 2px solid rgb(255, 8, 0);
+    border: 2px solid rgb(0, 0, 0);
+    width: 74px;
+    height: 74px;
 }
 
 .et-close-popup-window {
@@ -185,10 +187,10 @@ body {
 
 .et-button {
     padding: 12px 20px;
-    background: #ffe066;
+    background: #04ea4b;
     cursor: pointer;
     font-weight: bold;
-    color: #0c0c0c;
+    color: white;
     border-radius: 4px;
 }
 
@@ -232,11 +234,6 @@ body {
     .material-card {
         width: 40px;
         height: 40px;
-    }
-
-    .et-delete-material {
-       width: 35px;
-       height: 35px;
     }
 }
 

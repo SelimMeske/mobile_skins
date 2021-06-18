@@ -101,8 +101,6 @@ for(let i=0; i<allMaterials.length; i++) {
 
 chooseBackSkinButton.addEventListener('click', e => {
     mode = 'back_skin';
-
-    
 });
 
 backButton.addEventListener('click', e => {
