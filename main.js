@@ -67,26 +67,26 @@ for(let i=0; i<allMaterials.length; i++) {
                         camSkinImage.href.baseVal = galaxyS21.carbonBlackCam;
                     }
                     break;
-                case "leather-black":
+                case "carbon-gray":
                     if (mode == 'back_skin'){
                         backSkinImage.href.baseVal = galaxyS21.carbonGrayBack;
-                        choosedBackSkin = 'leather_black';
+                        choosedBackSkin = 'carbon_gray';
                     }else if(mode == 'cam_skin'){
                         camSkinImage.href.baseVal = galaxyS21.carbonGrayCam;
                     }
                     break;
-                case "wood-bamboo":
+                case "carbon-yellow":
                     if (mode == 'back_skin'){
                         backSkinImage.href.baseVal = galaxyS21.carbonYellowBack;
-                        choosedBackSkin = 'wood_bamboo';
+                        choosedBackSkin = 'carbon_yellow';
                     }else if(mode == 'cam_skin'){
                         camSkinImage.href.baseVal = galaxyS21.carbonYellowCam;
                     }
                     break;  
-                case "marble-white":
+                case "carbon-white":
                     if (mode == 'back_skin'){
                         backSkinImage.href.baseVal = galaxyS21.carbonWhiteBack;
-                        choosedBackSkin = 'marble_white';
+                        choosedBackSkin = 'carbon_white';
                     }else if(mode == 'cam_skin'){
                         camSkinImage.href.baseVal = galaxyS21.carbonWhiteCam;
                     }
