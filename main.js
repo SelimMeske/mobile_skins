@@ -47,23 +47,23 @@ for(let i=0; i<allMaterials.length; i++) {
             parent_card.classList.add('et-card-selected');
             switch(material){
                 case "carbon-red":
-                    backSkinImage.href.baseVal = carbonRed;
+                    backSkinImage.href.baseVal = galaxyS21.carbonRedBack;
                     choosedBackSkin = 'carbon_red';
                     break;
                 case "carbon-black":
-                    backSkinImage.href.baseVal = carbonBlack;
+                    backSkinImage.href.baseVal = galaxyS21.carbonBlackBack;
                     choosedBackSkin = 'carbon_black';
                     break;
                 case "leather-black":
-                    backSkinImage.href.baseVal = leatherBlack;
+                    backSkinImage.href.baseVal = galaxyS21.carbonGrayBack;
                     choosedBackSkin = 'leather_black';
                     break;
                 case "wood-bamboo":
-                    backSkinImage.href.baseVal = woodBamboo;
+                    backSkinImage.href.baseVal = galaxyS21.carbonYellowBack;
                     choosedBackSkin = 'wood_bamboo';
                     break;  
                 case "marble-white":
-                    backSkinImage.href.baseVal = marbleWhite;
+                    backSkinImage.href.baseVal = galaxyS21.carbonWhiteBack;
                     choosedBackSkin = 'marble_white';
                     break;
             }
