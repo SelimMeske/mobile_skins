@@ -80,7 +80,7 @@ for(let i=0; i<allMaterials.length; i++) {
                         backSkinImage.href.baseVal = galaxyS21.carbonYellowBack;
                         choosedBackSkin = 'carbon_yellow';
                     }else if(mode == 'cam_skin'){
-                        camSkinImage.href.baseVal = galaxyS21.carbonYellowCam;
+                        camSkinImage.href.baseVal = galaxyS21.yellowCarbonCam;
                     }
                     break;  
                 case "carbon-white":
@@ -88,7 +88,7 @@ for(let i=0; i<allMaterials.length; i++) {
                         backSkinImage.href.baseVal = galaxyS21.carbonWhiteBack;
                         choosedBackSkin = 'carbon_white';
                     }else if(mode == 'cam_skin'){
-                        camSkinImage.href.baseVal = galaxyS21.carbonWhiteCam;
+                        camSkinImage.href.baseVal = galaxyS21.whiteCarbonCam;
                     }
                     break;
             }
