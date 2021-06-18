@@ -32,6 +32,8 @@ for(let p=0; p<addSkinCards.length; p++) {
 
 for(let i=0; i<allMaterials.length; i++) {
     allMaterials[i].addEventListener('click', e => {
+
+        console.log('Trenutni mode je : ' + mode);
         
         let parent_card = e.target.parentElement;
         let material = parent_card.id;
