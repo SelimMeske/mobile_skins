@@ -4,6 +4,7 @@ let choosedCamSkin = null;
 
 let allMaterials = document.querySelectorAll('.material-card > img');
 let backSkinImage = document.querySelector('.back-image');
+let camSkinImage = document.querySelector('.cam-image');
 let allMaterialCards = document.querySelectorAll('.material-card');
 let removeMaterials = document.querySelector('.et-delete-material');
 let backButton = document.querySelector('.et-back-button');
@@ -43,30 +44,52 @@ for(let i=0; i<allMaterials.length; i++) {
             backSkinImage.href.baseVal = "";
             if(mode == 'back_skin') {
                 choosedBackSkin = null;
+            }else if(mode == 'cam_skin'){
+                choosedCamSkin = null;
             }
         }else{
             remove_all_selected_material_cards(allMaterialCards);
             parent_card.classList.add('et-card-selected');
             switch(material){
                 case "carbon-red":
-                    backSkinImage.href.baseVal = galaxyS21.carbonRedBack;
-                    choosedBackSkin = 'carbon_red';
+                    if (mode == 'back_skin'){
+                        backSkinImage.href.baseVal = galaxyS21.carbonRedBack;
+                        choosedBackSkin = 'carbon_red';
+                    }else if(mode == 'cam_skin'){
+                        camSkinImage.href.baseVal = galaxyS21.carbonRedCam;
+                    }
                     break;
                 case "carbon-black":
-                    backSkinImage.href.baseVal = galaxyS21.carbonBlackBack;
-                    choosedBackSkin = 'carbon_black';
+                    if (mode == 'back_skin'){
+                        backSkinImage.href.baseVal = galaxyS21.carbonBlackBack;
+                        choosedBackSkin = 'carbon_black';
+                    }else if(mode == 'cam_skin'){
+                        camSkinImage.href.baseVal = galaxyS21.carbonBlackCam;
+                    }
                     break;
                 case "leather-black":
-                    backSkinImage.href.baseVal = galaxyS21.carbonGrayBack;
-                    choosedBackSkin = 'leather_black';
+                    if (mode == 'back_skin'){
+                        backSkinImage.href.baseVal = galaxyS21.carbonGrayBack;
+                        choosedBackSkin = 'leather_black';
+                    }else if(mode == 'cam_skin'){
+                        camSkinImage.href.baseVal = galaxyS21.carbonGrayCam;
+                    }
                     break;
                 case "wood-bamboo":
-                    backSkinImage.href.baseVal = galaxyS21.carbonYellowBack;
-                    choosedBackSkin = 'wood_bamboo';
+                    if (mode == 'back_skin'){
+                        backSkinImage.href.baseVal = galaxyS21.carbonYellowBack;
+                        choosedBackSkin = 'wood_bamboo';
+                    }else if(mode == 'cam_skin'){
+                        camSkinImage.href.baseVal = galaxyS21.carbonYellowCam;
+                    }
                     break;  
                 case "marble-white":
-                    backSkinImage.href.baseVal = galaxyS21.carbonWhiteBack;
-                    choosedBackSkin = 'marble_white';
+                    if (mode == 'back_skin'){
+                        backSkinImage.href.baseVal = galaxyS21.carbonWhiteBack;
+                        choosedBackSkin = 'marble_white';
+                    }else if(mode == 'cam_skin'){
+                        camSkinImage.href.baseVal = galaxyS21.carbonWhiteCam;
+                    }
                     break;
             }
             
