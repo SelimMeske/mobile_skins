@@ -13,7 +13,7 @@ let chooseCamSkinButton = document.querySelector('.et-card-camera-skin');
 let chooseBackSkinButton = document.querySelector('.et-card-back-skin');
 let ribbon = document.querySelectorAll('.et-add-ribbon');
 let addSkinButton = document.querySelector('.et-add-skin-button');
-let addSkinCards = document.querySelectorAll(".et-card");
+let addSkinCards = document.querySelectorAll(".clicable-et-card");
 let backSkinCard = document.querySelector("#et-back-skin");
 let camSkinCard = document.querySelector("#et-cam-skin");
 
@@ -21,10 +21,11 @@ let camSkinCard = document.querySelector("#et-cam-skin");
 //Add mode depending on what did the user choose, back or cam skin.
 for(let p=0; p<addSkinCards.length; p++) {
     addSkinCards[p].addEventListener("click", e => {
-        if (e.target == backSkinCard) {
+
+        if (e.target.parentNode == backSkinCard) {
             mode = 'back_skin';
             mainPopupWindow.classList.remove('et-close-popup-window');
-        }else if (e.target == camSkinCard) {
+        }else if (e.target.parentNode == camSkinCard) {
             mode = 'cam_skin';
             mainPopupWindow.classList.remove('et-close-popup-window');
         }
