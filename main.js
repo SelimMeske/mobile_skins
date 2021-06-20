@@ -40,7 +40,6 @@ for(let i=0; i<allMaterials.length; i++) {
         
         if (parent_card.classList.contains('et-card-selected')) {
             remove_all_selected_material_cards(allMaterialCards);
-            console.log(mode);
             if(mode == 'back_skin') {
                 choosedBackSkin = null;
                 backSkinImage.href.baseVal = "";
