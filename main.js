@@ -33,19 +33,19 @@ for(let p=0; p<addSkinCards.length; p++) {
 
 for(let i=0; i<allMaterials.length; i++) {
     allMaterials[i].addEventListener('click', e => {
-
-        console.log('Trenutni mode je : ' + mode);
         
         let parent_card = e.target.parentElement;
         let material = parent_card.id;
         
         if (parent_card.classList.contains('et-card-selected')) {
             remove_all_selected_material_cards(allMaterialCards);
-            backSkinImage.href.baseVal = "";
+            console.log(mode);
             if(mode == 'back_skin') {
                 choosedBackSkin = null;
+                backSkinImage.href.baseVal = "";
             }else if(mode == 'cam_skin'){
                 choosedCamSkin = null;
+                camSkinImage.href.baseVal = "";
             }
         }else{
             remove_all_selected_material_cards(allMaterialCards);
