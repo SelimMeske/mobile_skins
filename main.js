@@ -31,14 +31,14 @@ for(let p=0; p<addSkinCards.length; p++) {
         }else if (e.target.parentNode == camSkinCard) {
             mode = 'cam_skin';
             mainPopupWindow.classList.remove('et-close-popup-window');
-            add_selected_material(allMaterialCards, choosedCamSkin); 
+            add_selected_material(allMaterialCards, choosedCamSkin);
         }
     });
 }
 
 for(let i=0; i<allMaterials.length; i++) {
     allMaterials[i].addEventListener('click', e => {
-        
+
         let parent_card = e.target.parentElement;
         let material = parent_card.id.replace('-', '_');
 
@@ -47,7 +47,7 @@ for(let i=0; i<allMaterials.length; i++) {
             remove_all_selected_material_cards(allMaterialCards);
             choosedBackSkin = null;
             backSkinImage.href.baseVal = "";
-            
+
         }else if(mode == 'cam_skin' && material == choosedCamSkin){
             remove_all_selected_material_cards(allMaterialCards);
             choosedCamSkin = null;
@@ -91,7 +91,7 @@ for(let i=0; i<allMaterials.length; i++) {
                         camSkinImage.href.baseVal = galaxyS21.yellowCarbonCam;
                         choosedCamSkin = 'carbon_yellow';
                     }
-                    break;  
+                    break;
                 case "carbon_white":
                     if (mode == 'back_skin'){
                         backSkinImage.href.baseVal = galaxyS21.carbonWhiteBack;
@@ -103,13 +103,13 @@ for(let i=0; i<allMaterials.length; i++) {
                     break;
             }
             if(mode == 'back_skin'){
-                add_selected_material(allMaterialCards, choosedBackSkin, parent_card);                    
+                add_selected_material(allMaterialCards, choosedBackSkin, parent_card);
             }else if(mode == 'cam_skin'){
-                add_selected_material(allMaterialCards, choosedCamSkin, parent_card);                    
+                add_selected_material(allMaterialCards, choosedCamSkin, parent_card);
             }
         }
 
-        
+
     });
 }
 
@@ -119,6 +119,10 @@ backButton.addEventListener('click', e => {
 
 addSkinButton.addEventListener('click', e => {
     apply_skin_and_close();
+});
+
+removeMaterials.addEventListener('click', e => {
+    delete_current_selection();
 });
 
 function apply_skin_and_close() {
@@ -160,5 +164,15 @@ function add_selected_material(elems, choosedSkin){
         if(choosedElem.id.replace('-', '_') == choosedSkin){
             choosedElem.classList.add('et-card-selected');
         }
+    }
+}
+
+function delete_current_selection() {
+    if(mode == 'back_skin'){
+      choosedBackSkin = null;
+      backSkinImage.href.baseVal = "";
+    }else if(mode == 'cam_skin'){
+      choosedCamSkin = null;
+      camSkinImage.href.baseVal = "";
     }
 }
